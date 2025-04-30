@@ -1,0 +1,19 @@
+spring:
+  # db config
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: pass
+    url: jdbc:postgresql://db:5433/reviewservice
+  jpa:
+    database: postgresql
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+server:
+  servlet:
+    context-path: /api
+
+token:
+  signingKey: c2VjcmV0Y29kZWtsYWZrMmw1azIzZGpza25jbGtqZXFva2V3d2VvZmVtd2ttd2VmbWtsd3Fta2xmZXdta2Z3ZW5scURTQVdFRkQzNDJLRkw=
