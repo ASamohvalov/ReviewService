@@ -4,12 +4,12 @@ spring:
     driver-class-name: org.postgresql.Driver
     username: postgres
     password: pass
-    url: jdbc:postgresql://db:5433/reviewservice
+    url: jdbc:postgresql://localhost:5432/reviewservice
   jpa:
     database: postgresql
     show-sql: true
     hibernate:
-      ddl-auto: update
+      ddl-auto: create
 
 server:
   servlet:
